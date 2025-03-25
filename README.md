@@ -13,4 +13,8 @@ para recrear el proyecto
 
 ## Para frontend 
  - npm install react-toastify 
- - npm install react-icons
+ - npm install react-icons.
+## video DEMO 
+## Demo
+![Demo VIDEO](demo.mp4)
+
