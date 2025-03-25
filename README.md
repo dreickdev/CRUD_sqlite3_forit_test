@@ -16,5 +16,5 @@ para recrear el proyecto
  - npm install react-icons.
 ## video DEMO 
 ## Demo
-![Demo VIDEO](demo.mp4)
+![Demo VIDEO](/demo.mp4)
 
