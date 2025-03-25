@@ -1,14 +1,16 @@
 # Crud_web_sqlte3_Nextjs_forit
-sisitema avanzaddo base en el modelo crud libre pero con persisitemcia de datos,por sqlite3,nextjs,
+sistema avanzado base en el modelo crud,
+libre pero con
+## persisitemcia de datos,por sqlite3,nextjs,
 
-## clonar el resoositorio, 
-para recrear el proyecto, 
+## clonar el respositorio, 
+para recrear el proyecto
+## Para Backnend
+- npm init -y
+- npm install express  cors
 
-npm init -y
-npm install express  cors
 
 
-
-para fontend 
-npm install react-toastify 
- npm install react-icons
+## Para frontend 
+ - npm install react-toastify 
+ - npm install react-icons
