@@ -1,0 +1,176 @@
+/* src/App.css */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #262626;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.app-main {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.task-form-container {
+  flex: 1;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-list-container {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación para las tareas */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.task-item {
+  padding: 15px;
+  border-bottom: 1px solid #dbdbdb;
+  animation: fadeIn 0.5s ease; /* Aplicar la animación al cargar */
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-item h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.task-item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+.task-item button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0095f6;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave para el botón */
+}
+
+.task-item button:hover {
+  background-color: #0077cc;
+}
+
+/* Animación para el icono de la tarea */
+.task-icon {
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Transición suave para el icono */
+}
+
+.task-icon:hover {
+  transform: scale(1.1); /* Aumentar el tamaño del icono al pasar el ratón */
+}
+/* src/App.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+/* src/App.css */
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* Ajusta el ancho del contenedor */
+  margin: 0 auto; /* Centrar el buscador */
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px 40px 10px 15px; /* Espacio para el ícono */
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Bordes redondeados */
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-container input:focus {
+  border-color: #0095f6; /* Cambiar color al enfocar */
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px; /* Ajustar posición */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 18px;
+  cursor: pointer;
+  animation: heartbeat 1.5s infinite; /* Animación de latido */
+}
+
+/* Animación de latido */
+@keyframes heartbeat {
+  0% {
+      transform: translateY(-50%) scale(1);
+  }
+  50% {
+      transform: translateY(-50%) scale(1.1);
+  }
+  100% {
+      transform: translateY(-50%) scale(1);
+  }
+}
